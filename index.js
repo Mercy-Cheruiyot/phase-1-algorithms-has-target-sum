@@ -10,7 +10,7 @@ return false;
 }
 
 /* 
- O
+ On^2
 */
 
 /* 
