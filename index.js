@@ -1,17 +1,24 @@
 function hasTargetSum(array, target) {
-  // Write your algorithm here
+    for (let i = 0; i < array.length; i++) {
+      const complement = target - array[i];
+      for (let j = i + 1; j < array.length; j++) {
+        if (array[j] === complement) return true;
+      }
+    }
+return false;
+ //Make a function "hasTargetSum"that checks if two numbers add up to the "target"interger.Then return true if it meets the condition.
 }
 
 /* 
-  Write the Big O time complexity of your function here
+ O
 */
 
 /* 
   Add your pseudocode here
-*/
-
-/*
-  Add written explanation of your solution here
+  1.iterate through the array,
+2.identintify a compliment for the current number in the array (compliment=target-current number)
+3.iterate through the rest of the array
+4.check if any number is our compliment then returns true if so and false if otherwise.
 */
 
 // You can run `node index.js` to view these console logs
